@@ -5,7 +5,7 @@ namespace BanHoaQuaOnline.Models;
 
 public partial class TbProduct
 {
-    public int ProductId { get; set; }
+    public int ProductId { get; set; }  
 
     public string? ProductName { get; set; }
 

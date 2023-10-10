@@ -116,7 +116,7 @@
 							</div>
 						</div>
 						<div class="add-to-cart">
-							<a class="btn obrien-button primary-btn" href="cart.html">Add to cart</a>
+							<a class="btn obrien-button primary-btn" href="cart.html">Thêm Vào Giỏ Hàng</a>
 							<input hidden asp-for="ProductId" />
 						</div>
 					</div>
@@ -124,7 +124,7 @@
 						<a href="#" class="btn obrien-button-3 black-button">Đặt hàng ngay</a>
 					</div>
 					<div class="social-share mb-4">
-						<span>Share :</span>
+						<span>Chia Sẻ :</span>
 						<a href="#"><i class="fa fa-facebook-square facebook-color"></i></a>
 						<a href="#"><i class="fa fa-twitter-square twitter-color"></i></a>
 						<a href="#"><i class="fa fa-linkedin-square linkedin-color"></i></a>
@@ -140,13 +140,13 @@
 			<div class="col-lg-12">
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link active text-uppercase" id="home-tab" data-bs-toggle="tab" href="#connect-1" role="tab" aria-selected="true">Description</a>
+						<a class="nav-link active text-uppercase" id="home-tab" data-bs-toggle="tab" href="#connect-1" role="tab" aria-selected="true">Chi Tiết Sản Phẩm</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-uppercase" id="profile-tab" data-bs-toggle="tab" href="#connect-2" role="tab" aria-selected="false">Reviews</a>
+						<a class="nav-link text-uppercase" id="profile-tab" data-bs-toggle="tab" href="#connect-2" role="tab" aria-selected="false">Đánh Giá</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-uppercase" id="contact-tab" data-bs-toggle="tab" href="#connect-3" role="tab" aria-selected="false">Shipping Policy</a>
+						<a class="nav-link text-uppercase" id="contact-tab" data-bs-toggle="tab" href="#connect-3" role="tab" aria-selected="false">Chính Sách Vận Chuyển</a>
 					</li>
 
 				</ul>
@@ -165,7 +165,25 @@
 								<!-- Start Single Review -->
 								<div class="pro_review mb-5">
 									<div class="review_thumb">
-										<img alt="review images" src="~/assets/images/review/1.jpg">
+										<img class="img_resize" alt="review images" src="~/assets/images/review/1.jpg">
+									</div>
+									<div class="review_details">
+										<div class="review_info mb-2">
+											<div class="product-rating mb-2">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+											<h5>Văn Dũng <span> December 19, 2023</span></h5>
+										</div>
+										<p>Mô Hình Quá Tuyệt Vời Tôi Rất Thích Nó</p>
+									</div>
+								</div>
+								<div class="pro_review mb-5">
+									<div class="review_thumb">
+										<img class="img_resize" alt="review images" src="~/assets/images/review/2.jpg">
 									</div>
 									<div class="review_details">
 										<div class="review_info mb-2">
@@ -176,17 +194,35 @@
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star-o"></i>
 											</div>
-											<h5>Admin - <span> December 19, 2020</span></h5>
+											<h5>Phúc Vũ <span> September 28, 2023</span></h5>
 										</div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in viverra ex, vitae vestibulum arcu. Duis sollicitudin metus sed lorem commodo, eu dapibus libero interdum. Morbi convallis viverra erat, et aliquet orci congue vel. Integer in odio enim. Pellentesque in dignissim leo. Vivamus varius ex sit amet quam tincidunt iaculis.</p>
+										<p>Mô Hình Rất đẹp, Cửa Hàng Rất Nhiệt Tình</p>
 									</div>
 								</div>
-								<!-- End Single Review -->
+								<div class="pro_review mb-5">
+									<div class="review_thumb">
+										<img class="img_resize" alt="review images" src="~/assets/images/review/3.jpg">
+									</div>
+									<div class="review_details">
+										<div class="review_info mb-2">
+											<div class="product-rating mb-2">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o"></i>
+												<i class="fa fa-star-o"></i>
+											</div>
+											<h5>Đào Tùng<span> December 19, 2023</span></h5>
+										</div>
+										<p>Mô Hình Rất Nhiều Chi Tiết Khiến Tôi Làm Mất 1 Linh Kiện, Nhưng Vẫn Rất Đẹp</p>
+									</div>
+								</div>
+								<!-- End 3 Review -->
 							</div>
 							<!-- Start RAting Area -->
 							<div class="rating_wrap">
-								<h5 class="rating-title-1 mb-2">Add a review </h5>
-								<p class="mb-2">Your email address will not be published. Required fields are marked *</p>
+								<h5 class="rating-title-1 mb-2">Thêm Đánh Giá </h5>
+								<p class="mb-2">Tài Khoản Email Của Bạn Sẽ Không Bị Công Bố, Khu Vực Cần Bổ Sung *</p>
 								<h6 class="rating-title-2 mb-2">Your Rating</h6>
 								<div class="rating_list mb-4">
 									<div class="review_info">
@@ -207,7 +243,7 @@
 										<form action="#" class="comment-form-area">
 											<div class="row comment-input">
 												<div class="col-md-6 col-custom comment-form-author mb-3">
-													<label>Name <span class="required">*</span></label>
+													<label>Tên Của Bạn <span class="required">*</span></label>
 													<input type="text" required="required" name="Name">
 												</div>
 												<div class="col-md-6 col-custom comment-form-emai mb-3">
@@ -216,11 +252,11 @@
 												</div>
 											</div>
 											<div class="comment-form-comment mb-3">
-												<label>Comment</label>
+												<label>Đánh Giá</label>
 												<textarea class="comment-notes" required="required"></textarea>
 											</div>
 											<div class="comment-form-submit">
-												<input type="submit" value="Submit" class="comment-submit btn obrien-button primary-btn">
+												<input type="submit" value="Gửi Đánh Giá" class="comment-submit btn obrien-button primary-btn">
 											</div>
 										</form>
 									</div>
@@ -231,19 +267,25 @@
 					</div>
 					<div class="tab-pane fade" id="connect-3" role="tabpanel" aria-labelledby="contact-tab">
 						<div class="shipping-policy">
-							<h4 class="title-3 mb-4">Shipping policy for our store</h4>
-							<p class="desc-content mb-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate</p>
+							<h4 class="title-3 mb-4">Chính Sách Vận Chuyển Của Cừa Hàng Chúng Tôi</h4>
+							<p class="desc-content mb-2">
+								Sau khi Quý khách đã đặt hàng thành công, nhân viên của chúng tôi sẽ tiến hành xác minh đơn hàng, đồng thời gửi cập nhật sớm nhất đến quý khách qua email.</p>
 							<ul class="policy-list mb-2">
-								<li>1-2 business days (Typically by end of day)</li>
-								<li><a href="#">30 days money back guaranty</a></li>
-								<li>24/7 live support</li>
-								<li>odio dignissim qui blandit praesent</li>
-								<li>luptatum zzril delenit augue duis dolore</li>
-								<li>te feugait nulla facilisi.</li>
+								<li>1 - 2 Ngày Cao Điểm (Đa Phần Là Cuối Tuần)</li>
+								<li><a href="#">Hoàn Tiền Trong Vòng 30 Ngày Nếu Có Vấn Đề</a></li>
+								<li>Hỗ Trợ Trực Tiếp 24/7</li>
+								<li>Giao Hàng Hoả Tốc Trong Khu Vực Nội Thành Hà Nội</li>
+								<li>Các Khu Vực Còn Lại Cừa Hàng Không Nhận Giao Hàng Hoả Tốc</li>
+								<li>Thời gian được bắt đầu tính từ lúc đơn hàng của quý khách được xác nhận thành công. Nếu quý khách đặt hàng sau 4:00 chiều, thời gian giao hàng của quý khách được tính thêm 1 ngày</li>
 							</ul>
-							<p class="desc-content mb-2">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum</p>
-							<p class="desc-content mb-2">claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per</p>
-							<p class="desc-content mb-2">seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+							<h4 class="title-3 mb-4">Chính Sách Đổi Trả</h4>
+							<p class="desc-content mb-2">Khi nhận hàng, Quý khách cần lưu ý thực hiện:</p>
+							<ul class="policy-list mb-2">
+								<li>Kiểm tra xem có đúng và đủ các sản phẩm mà Khách hàng đã đặt mua</li>
+								<li>Kiểm tra bao bì còn nguyên hộp, đầy đủ tem nhãn và sản phẩm có bị hư hại do quá trình vận chuyển hay không</li>
+								<li>Ký xác nhận đã nhận sản phẩm</li>					
+							</ul>
+							<p class="desc-content mb-2">Nếu không hài lòng với sản phẩm Quý khách có thể yêu cầu Nhân viên giao hàng xác nhận và trả lại hàng. JKFigure.com sẽ không chịu trách nhiệm giải quyết khiếu nại của Khách hàng sau khi Khách hàng đã ký nhận và thanh toán.</p>
 						</div>
 					</div>
 
@@ -322,7 +364,7 @@
 										
 									</div>
 									<div class="add-action d-flex position-absolute">
-										<a href="cart.html" title="Add To cart">
+										<a href="cart.html" title="Thêm Vào Giỏ Hàng">
 											<i class="ion-bag"></i>
 											<input hidden asp-for="ProductId" />
 										</a>

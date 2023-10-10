@@ -2981,8 +2981,14 @@ button,
   }
 }
 
+.img_resize{
+    width:50px;
+    height:50px;
+}
+
 .single-product-main-area .review_thumb {
-  min-width: 62px;
+    min-height: 50px;
+    min-width: 50px;
 }
 
 .single-product-main-area .review_details {
